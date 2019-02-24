@@ -1,0 +1,64 @@
+---
+A_General:
+  dir_files: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes'
+  dir_out: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output'
+  job_name: 29
+  names: Xam_CIO1.fasta,XooKACC10331_genome.fasta,Xcc_aw12879.fasta,XalGPE_PC73_genome.fasta,XooPXO99A_genome.fasta,Xca756C_genome.fasta,Xam_UA303.fasta,XooMAFF311018_genome.fasta,XamCIO151_Uniandes.fasta,Xvm_complete.fasta,Xam_cassavae.fasta,Xam_UG39.fasta,XvmNCPPB4381_genome.fasta,Xam_NCPPB1159.fasta,Xcv8510_genome.fasta,Xam_IBSBF320.fasta,XvvNCPPB702_genome.fasta,XooBLS256_update.fasta,Xam_IBSBF725.fasta,Xam_IBSBF1411.fasta,Xac306_genome.fasta,Xa_citrumeloF1.fasta,XccB100_genome.fasta,XccATCC33913_genome.fasta,Xam_UA226.fasta,Xam_IBSBF356.fasta,Xam_CFBP1851.fasta,Xam_IBSBF2346.fasta,Xcc8004_genome.fasta
+  num_genomes: ~
+  num_regions: ~
+B_MAUVE:
+  path_mauve: '/datos-biologia/BioProgs/gainloss/MAUVE/'
+C_MAUVE_output:
+  backbone: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.backbone'
+  tree: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.tree'
+  xmfa: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.xmfa'
+D_ssLCBs:
+  length: 500
+  path_ssLCBs: '/datos-biologia/BioProgs/gainloss/MAUVE/utility/'
+E_ssLCBs_output:
+  bbcols: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.xmfa.bbcols'
+  core: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.core_alignment.xmfa'
+F_Blocksplit:
+  num_blocks: 1189
+  path_blocksplit: '/datos-biologia/BioProgs/gainloss/clonalorigin/warg/scripts/'
+G_Result:
+  Binary_File: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.backbone.binary'
+  Summary_File: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.Rcomb.out'
+General:
+  num_genomes: 29
+  num_regions: 1189
+H_ClonalFrame:
+  burn_in: 100000000000
+  interval: 100000
+  iterations: 10000000000
+  others: ' -v -C '
+  parallel: 10
+  path_ClonalFrame: '/datos-biologia//BioProgs/gainloss/ClonalFrame/bin/'
+  threshold: 6.80e-01
+I_ClonalFrame_output:
+  clonal_concensus: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.clonalframe.out.1'
+J_ClonalTree:
+  path_clonaltree: '/datos-biologia/BioProgs/gainloss/clonalorigin/warg/scripts/'
+K_ClonalTree_output:
+  final_tree: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.clonaltree.nwk'
+L_Result:
+  Summary_File: '/biologia-scratch3/l.perlaza149/DeEP_Pro/130_genomes_output/29.Rcomb_6.80e-01.out'
+M_window_acgt:
+  path_window: '/datos-biologia/BioProgs_SGE/glimmer3.02/bin/'
+  window_skip: 80
+N_Rscript:
+  Rscript_path: '/biologia-scratch3/l.perlaza149/DeEP_Pro/DeEP_Scripts/R-3.1.1/bin/Rscript'
+O_Results:
+  Summary_file: '//data/DeEP/Genom130_Output//gc_result_pvalue.txt'
+P_Patterns:
+  file_binary: '//data/DeEP/Genom130_Output//XAM_130.backbone.binary'
+  file_pattern: '//data/DeEP/Genom130_Output//XAM_130.backbone_.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,_.matrix'
+  pattern: '.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,'
+  region_name: ~
+Q_AutoBLAST:
+  blast_task: ~
+  dbtype: ~
+  output_format: ~
+  path_bin: '/datos-biologia/BioProgs_SGE//ncbi-blast-2.2.25+/bin'
+  path_queries: ~
+  reference_genomes: ~
