@@ -1,0 +1,63 @@
+---
+A_General:
+  dir_files: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete'
+  dir_out: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete_output'
+  job_name: Shigella_Complete
+  names: Shigella_sonnei_53G.fasta,Escherichia_coli_SE11.fasta,Escherichia_coli_O111_H__11128_uid41023.fasta,Shigella_flexneri_2a_str_301.fasta,Shigella_boydii_CDC_3083-94.fasta,Escherichia_coli_ETEC_H10407.fasta,Escherichia_coli_E24377A_uid58395.fasta,Shigella_dysenteriae_Sd197.fasta,Escherichia_coli_K-12_MG1655.fasta,Shigella_sonnei_Ss046.fasta,Shigella_boydii_Sb227.fasta,Shigella_flexneri_2002017.fasta
+  num_genomes: 12
+  num_regions: ~
+B_MAUVE:
+  path_mauve: '/datos-biologia/BioProgs/gainloss/MAUVE/'
+C_MAUVE_output:
+  backbone: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete_output/Shigella_Complete.backbone'
+  tree: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete_output/Shigella_Complete.tree'
+  xmfa: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete_output/Shigella_Complete.xmfa'
+D_ssLCBs:
+  length: 500
+  path_ssLCBs: '/datos-biologia/BioProgs/gainloss/MAUVE/utility/'
+E_ssLCBs_output:
+  bbcols: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete_output/Shigella_Complete.xmfa.bbcols'
+  core: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete_output/Shigella_Complete.core_alignment.xmfa'
+F_Blocksplit:
+  num_blocks: 797
+  path_blocksplit: '/datos-biologia/BioProgs/gainloss/clonalorigin/warg/scripts/'
+G_Result:
+  Binary_File: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_Complete_output/Shigella_Complete.backbone.binary'
+  Summary_File: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_output/Shigella.Rcomb_4.00e-01.out'
+H_ClonalFrame:
+  burn_in: 10000
+  interval: 100
+  iterations: 10000
+  others: ' '
+  parallel: 10
+  path_ClonalFrame: '/datos-biologia//BioProgs/gainloss/ClonalFrame/bin/'
+  threshold: 5.00e-01
+I_ClonalFrame_output:
+  clonal_concensus: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_genomes_output/Shigella.clonalframe.out.1'
+J_ClonalTree:
+  path_clonaltree: '/datos-biologia/BioProgs/gainloss/clonalorigin/warg/scripts/'
+K_ClonalTree_output:
+  final_tree: ''
+L_Result:
+  Binary_file: ''
+  Summary_File: '/biologia-scratch3/l.perlaza149/DeEP_Pro/Shigella_genomes_output/Shigella.Rcomb_5.00e-01.out'
+M_window_acgt:
+  path_window: '/datos-biologia/BioProgs_SGE/glimmer3.02/bin/'
+  window_skip: 80
+N_Rscript:
+  Rscript_path: '/biologia-scratch3/l.perlaza149/DeEP_Pro/DeEP_Scripts/R-3.1.1/bin/Rscript'
+  parallel: 10
+O_Results:
+  Binary_file: '//data/DeEP/Genom130_Output//gc_result_pvalue.txt'
+P_Patterns:
+  file_binary: '//data/DeEP/Genom130_Output//XAM_130.backbone.binary'
+  file_pattern: '//data/DeEP/Genom130_Output//XAM_130.backbone_.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,_.matrix'
+  pattern: '.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,'
+  region_name: ~
+Q_AutoBLAST:
+  blast_task: ~
+  dbtype: ~
+  output_format: ~
+  path_bin: '/datos-biologia/BioProgs_SGE//ncbi-blast-2.2.25+/bin'
+  path_queries: ~
+  reference_genomes: ~
